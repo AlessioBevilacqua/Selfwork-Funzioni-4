@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        function palindromo (str) {
+            let nudeStr = str.replace(/[\W_]/g, '')
+    
+            let reversedStr = nudeStr.split('').reverse().join('');
+
+            if (nudeStr === reversedStr) {
+               return console.log('true');
+            } else {
+               return console.log('false');
+            }
+        }
+
+        palindromo('i topi non avevano nipoti');
+
+
+        </script>
+        
+    </body>
+    </html>
